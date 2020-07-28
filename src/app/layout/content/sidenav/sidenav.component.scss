@@ -1,17 +1,13 @@
 @import 'src/scss/_variables.scss';
 
 .sidenav-container {
-    background-color: #252931;
+    background-color: $dark-grey-color;
     height: 100%;
 }
 
 .header, .categories, .sidenav-container {
     display: flex;
     flex-direction: column;
-}
-
-.topnav {
-
 }
 
 .edit {
@@ -30,7 +26,7 @@
     margin-top: 10px;
     font-family: "New Cicle Fina";
     font-size: 22px;
-    color: rgb(255, 255, 255);
+    color: white;
     align-self: center;
 }
 
@@ -54,6 +50,8 @@
         color: white;
         border-top: 2px solid #373b43;
         cursor: pointer;
+
+        
     
         .icon {
             width: 15%;
@@ -63,6 +61,7 @@
     
         img {
             height: 30px;
+            width: 36px;
         }
     
         .name {
@@ -81,19 +80,11 @@
                 padding: 3px 10px;
                 border-radius: 10px;
             }
+
+            .active {
+                background-color: $teal-color;
+            }
         }
-    }
-}
-
-.mails {
-    img {
-        height: 26px !important;
-    }
-}
-
-.friends {
-    img {
-        height: 26px !important;
     }
 }
 

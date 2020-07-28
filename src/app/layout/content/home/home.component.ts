@@ -10,7 +10,7 @@ import { Notification } from './models/notification.model';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  
+
   @Input() mode: string;
   @Output() toggle = new EventEmitter();
 
@@ -21,17 +21,12 @@ export class HomeComponent implements OnInit {
 
   NOTIFICATION_FRIENDS = notificationFriends;
   NOTIFICATION_MAILS = notificationMails;
-  
+
   ngOnInit() {
-    // if (this.mode === 'friends') {
-    //   this.notifications = NOTIFICATION_FRIENDS;
-    // } else if (this.mode === 'mails') {
-    //   this.notifications = NOTIFICATION_MAILS;
-    // }
   }
 
-  receiveData($event, list) {
-    list.splice(list.findIndex(item => item.id === $event), 1);
+  receiveData(id: number, list: Notification[]) {
+    list.splice(list.findIndex(item => item.id === id), 1);
   }
 
 }

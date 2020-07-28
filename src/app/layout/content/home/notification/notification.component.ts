@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Notification } from '../models/notification.model';
 
 @Component({
   selector: 'app-notification',
@@ -8,7 +9,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class NotificationComponent implements OnInit {
   status: boolean;
 
-  @Input() notification;
+  @Input() notification: Notification;
   @Output() deleteEvent = new EventEmitter<number>();
 
   constructor() { }
