@@ -1,0 +1,115 @@
+@import 'src/scss/_variables.scss';
+
+.sidenav-container {
+    background-color: #252931;
+    height: 100%;
+}
+
+.header, .categories, .sidenav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav {
+
+}
+
+.edit {
+    background-image: url("../../../../assets/images/edit.png");
+    background-size: 20px;
+}
+
+.avatar {
+    width: 190px;
+    align-self: center;
+    border-radius: 50%;
+    border: 8px solid #2e3239;
+}
+
+.title {
+    margin-top: 10px;
+    font-family: "New Cicle Fina";
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    align-self: center;
+}
+
+.subtitle {
+    font-family: "New Cicle Fina";
+    font-size: 18px;
+    color: $salmon-color;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.categories {
+    font-family: "New Cicle Fina";
+    font-size: 20px;
+    margin-bottom: 25px;
+
+    .mails, .friends, .invites, .bookmarks, .settings {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        color: white;
+        border-top: 2px solid #373b43;
+        cursor: pointer;
+    
+        .icon {
+            width: 15%;
+            align-self: center;
+            margin-left: 25px;
+        }
+    
+        img {
+            height: 30px;
+        }
+    
+        .name {
+            align-self: center;
+            width: 50%;
+        }
+        
+        .count {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                background-color: grey;
+                padding: 3px 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.mails {
+    img {
+        height: 26px !important;
+    }
+}
+
+.friends {
+    img {
+        height: 26px !important;
+    }
+}
+
+.settings {
+    border-bottom: 2px solid #373b43;
+}
+
+.exit {
+    width: 70px;
+    align-self: center;
+    cursor: pointer;
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,12 @@
+@import 'src/scss/_variables.scss';
+
+  .container {
+    max-width: 500px;
+    min-height: 840px;
+    background-color: $salmon-color; 
+    margin: auto;
+  }
+  
+  .sidenav {
+    width: 85%;
+  }

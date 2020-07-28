@@ -1,0 +1,122 @@
+@import 'src/scss/_variables.scss';
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #191c21;
+    background-image: url("../../../../assets/images/Layer1.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.menu {
+    background-image: url('../../../../assets/images/menu.png');
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.heart {
+    height: 25px;
+}
+
+.uilove {
+    margin-left: 10px;
+    font-family: "BlackJack";
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.briefcase {
+    background-image: url('../../../../assets/images/BIOicon.png');
+}
+
+.title, .subtitle1, .subtitle2 {
+    align-self: center;
+}
+
+.title {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    font-size: 45px;
+    font-family: "BlackJack";
+}
+
+.title1 {
+    color: rgb(255, 255, 255);
+}
+
+.title2 {
+    margin-left: 15px;
+    color: $salmon-color;
+}
+
+.subtitle1 {
+    margin-top: 10px;
+    font-family: "New Cicle Fina";
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.subtitle2 {
+    font-family: "New Cicle Fina";
+    font-size: 18px;
+    color: $salmon-color;
+}
+
+.socials {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    position: relative;
+}
+
+.dri {
+    background-image: url('../../../../assets/images/dribbble.png');
+}
+
+.for {
+    background-image: url('../../../../assets/images/forrst.png');
+}
+
+.be {
+    background-image: url('../../../../assets/images/Be.png');
+}
+
+.count {
+    position: absolute;
+    background-color: $salmon-color;
+    width: 40px;
+    height: 33px;
+    top: -7px;
+    left: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "New Cicle Fina";
+    font-size: 20px;
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+}

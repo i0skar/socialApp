@@ -1,0 +1,40 @@
+<div class="home-container">
+    <div class="header">
+        <div class="topnav">
+            <button mat-icon-button class="menu" (click)="toggle.next(control.value)"></button>
+            <div class="logo">
+                <img src="../../../../assets/images/hearth.png" alt="heart" class="heart">
+                <div class="uilove">uilove</div>
+            </div>
+            <button mat-icon-button class="briefcase"></button>
+        </div>
+        <div class="title">
+            <div class="title1">Principal</div>
+            <div class="title2">Designes</div>
+        </div>
+        <div class="subtitle1">who believe in simplicity.</div>
+        <div class="subtitle2">love with UI / GUI / UX</div>
+        <div class="socials">
+            <button mat-icon-button class="dri"></button>
+            <button mat-icon-button class="for"></button>
+            <button mat-icon-button class="be"></button>
+            <div class="count">21</div>
+        </div>
+    </div>
+    <div class="items">
+        <ng-container *ngIf="mode === 'friends'">
+            <app-notification 
+                *ngFor="let notification of NOTIFICATION_FRIENDS" 
+                [notification]="notification"
+                (deleteEvent)="receiveData($event, NOTIFICATION_FRIENDS)">
+            </app-notification>
+        </ng-container>
+        <ng-container *ngIf="mode === 'mails'">
+            <app-notification 
+                *ngFor="let notification of NOTIFICATION_MAILS" 
+                [notification]="notification"
+                (deleteEvent)="receiveData($event, NOTIFICATION_MAILS)">
+            </app-notification>
+        </ng-container>
+    </div>
+</div>

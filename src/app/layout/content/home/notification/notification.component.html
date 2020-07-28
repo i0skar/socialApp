@@ -1,0 +1,31 @@
+<mat-drawer-container [hasBackdrop]="false">
+  <mat-drawer class="sidenav" #drawer [mode]="'push'" position="end" [autoFocus]="false">
+    <div class="options">
+      <button mat-icon-button class="follow"></button>
+      <button 
+        mat-icon-button 
+        class="like" 
+        (click)="status=!status"
+        [ngClass]="status ? 'liked' : 'like'">
+      </button>
+      <button 
+        mat-icon-button 
+        class="delete"
+        (click)="delete(notification.id)"></button>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div (click)="drawer.toggle()" class="container">
+      <div class="icon">
+        <img [src]="notification.icon" alt="icon">
+      </div>
+      <div class="main">
+        <div class="info">
+          <div class="time">{{notification.time}}</div>
+          <div class="author">by: {{notification.author}}</div>
+        </div>
+        <div class="title">{{notification.title}}</div>
+      </div>
+    </div>
+  </mat-drawer-content>
+  </mat-drawer-container>

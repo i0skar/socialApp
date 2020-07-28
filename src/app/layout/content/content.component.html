@@ -1,0 +1,10 @@
+<mat-drawer-container class="container" [hasBackdrop]="false">
+<mat-drawer class="sidenav" #drawer [mode]="'push'" [autoFocus]="false">
+    <app-sidenav 
+        (mails)="setMails()"
+        (friends)="setFriends()"></app-sidenav>
+</mat-drawer>
+<mat-drawer-content>
+    <app-home (toggle)="drawer.toggle()" [mode]="mode"></app-home>
+</mat-drawer-content>
+</mat-drawer-container>
